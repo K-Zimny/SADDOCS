@@ -1,0 +1,41 @@
+button {
+  background-color: #313d4d;
+  border: 2px solid #1f1f1f;
+  box-shadow: -8px 6px #979999;
+  color: #eef0e8;
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 1rem;
+  margin-right: calc(1rem + 8px);
+  margin-top: 4px;
+  padding: 0.2rem 0.5rem 0.2rem 6rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease,
+    color 0.3s ease, box-shadow 0.3s ease;
+  width: max-content;
+}
+
+button.active,
+button:hover,
+button:focus {
+  background-color: transparent;
+  border: 2px solid transparent;
+  box-shadow: -4px 3px #313d4d;
+  color: #1f1f1f;
+}
+
+button.active {
+  background-color: transparent;
+}
+
+@media (prefers-reduced-motion) {
+  button {
+    transition: none;
+  }
+
+  button:hover,
+  button:active,
+  button:focus {
+    box-shadow: 8px -6px darkcyan;
+  }
+}

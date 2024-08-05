@@ -1,0 +1,27 @@
+/* Tabs */
+
+.button-bar {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  @media (width>=600px) {
+    flex-direction: column;
+  }
+}
+
+/* Tab Containers */
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  @media (width>=600px) {
+    flex-direction: row;
+  }
+}
+
+.tabs-content-container {
+  border-left: 2px solid #1f1f1f;
+  display: flex;
+  justify-content: start;
+  padding-left: 3rem;
+}
